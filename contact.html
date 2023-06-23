@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--'xs': '1px',
+      'sm': '640px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1560px',-->
+  <body class="bg-100 ">
+    
+    <!-- NAV BAR -->
+    <nav class="bg-100">
+      <div class="flex items-center justify-between py-8 px-4 md:px-16 lg:px-24 xl:px-44 2xl:px-56">
+        <div>
+        <a href="index.html">
+        <img class="w-3/4" src="img/Logo.svg" alt="Krzysztof Juszkowski"/>
+    </div>
+      </a>
+      <div class="flex items-center justify-between">
+        <div class="hidden md:flex justify-center font-poppins text-16 text-800 font-normal mr-10 gap-10" id="navbar-links">
+
+             <a href="index.html" class="nav-link">HOME</a>
+            <a href="work.html" class="nav-link">WORK</a>         
+            <a href="about.html" class="nav-link">ABOUT</a>
+            <a href="contact.html" class="nav-link active">CONTACT</a>
+          </div>
+
+
+        <div class="hidden md:flex" id="social-links">
+          <a href="https://www.behance.net/krzysiejuszkow" class="pr-4">
+            <img src="img/behance.svg" alt="Behance" />
+          </a>
+          <a href="https://www.linkedin.com/in/krzysztof-juszkowski-484767210/">
+            <img src="img/linkedin.svg" alt="Linkedin"/>
+          </a>
+        </div>
+        <!-- mobile social-links -->
+        <div class="mobile-social md:hidden flex items-center">
+            <button class="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"/>
+              </svg>
+            </button>
+        </div>
+
+    </div>
+       
+        
+      </div>
+       <!-- mobile menu -->
+       <div class="mobile-menu bg-100 absolute md:absolute hidden md:hidden font-poppins text-16 text-800 font-normal flex flex-col justify-start w-full drop-shadow-sm">
+        <a href="index.html" class="nav-link block py-10 px-4 bg-100">HOME</a>
+        <a href="work.html" class="nav-link block py-10 px-4 bg-100 ">WORK</a>         
+        <a href="about.html" class="nav-link block py-10 px-4 bg-100">ABOUT</a>
+        <a href="contact.html" class="nav-link active block py-10 px-4 bg-100">CONTACT</a>
+       <!-- mobile social-links -->
+       <div class="pt-14">
+        <div class="flex border border-300">
+            <a class="py-7 px-2 bg-100 w-full flex justify-center  " href="https://www.behance.net/krzysiejuszkow">
+              <img  src="img/behance.svg" alt="Behance"/>
+            </a>
+            <a class="py-7 px-2  bg-100 w-full flex justify-center" href="https://www.linkedin.com/in/krzysztof-juszkowski-484767210/">
+              <img  src="img/linkedin.svg" alt="Linkedin" />
+            </a>
+          </div>
+        </div>
+    </div>
+    </nav>
+
+    <script>
+        // Grab everything we need
+        const btn = document.querySelector(".hamburger");
+        const menu = document.querySelector(".mobile-menu");
+        //add event listeners
+        
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        })
+    </script>
+
+<!-- Title -->
+
+<section class="flex justify-between mx-4 md:mx-16 lg:mx-24 xl:mx-44 2xl:mx-56">
+  <div class="flex flex-col items">
+    <p class="font poppins hidden md:block text-16 text-200">Krzysztof Juszkowski</p>
+    <p class="font poppins hidden md:block text-16 text-200">Product Design</p>
+    <p class="font poppins hidden md:block text-16 text-200">3D Design</p>
+   </div>
+   <div>
+    <h2 class="text-38 md:text-60 xl:text-67 text-200">Contact</h2>
+   </div>
+</section>
+<hr class="h-4 text-200 flex items-center mx-4 mb-8 mt-4 md:mx-16 lg:mx-24 xl:mx-44 2xl:mx-56 md:mb-6 lg:mb-16 xl:mb-24">
+
+
+<!-- CONTACT ME-->
+<section class="flex flex-col mt-12 md:mx-16 lg:mx-24 xl:mx-44 2xl:mx-56 md:mb-6 lg:mb-16 xl:mb-24">
+<div class="block sm:hidden flex items-center mb-10 justify-center space-x-4">
+  <a class="flex justify-center" href="https://www.behance.net/krzysiejuszkow">
+  <img  class="w-10/12"  src="img/linkedin_outline.svg" alt="Linkedin">
+</a>
+<a class="flex justify-center" href="https://www.linkedin.com/in/krzysztof-juszkowski-484767210/">
+  <img  class="w-10/12" src="img/Behance_outline.svg" alt="Behance">
+</a>
+</div>
+<div class="flex items-center sm:justify-between sm:w-full">
+  <a class="hidden sm:block" href="https://www.behance.net/krzysiejuszkow">
+    <img  class="w-10/12 xl:w-full"  src="img/linkedin_outline.svg" alt="Linkedin">
+  </a>
+  <div class="flex flex-col items-center">
+  <h1 class="text-800 text-50 sm:text-60 md:text-67 lg:text-89   truncate text-center ">Lets connect</h1>
+  <p class="text-800 text-16 xl:text-21  text-center sm:w-8/12">Transforming data into ideas to fulfill the needs of your users and pamper your business</p>
+  </div>
+  <a class="hidden sm:block" href="https://www.linkedin.com/in/krzysztof-juszkowski-484767210/">
+    <img  class="w-10/12 xl:w-full" src="img/Behance_outline.svg" alt="Behance">
+  </a>
+</div>
+<div class="flex justify-center items-center mt-14 md:mt-16 xl:mt-28">
+  <div class="h-[0.031rem] bg-accent w-full"></div>
+  <button id="copyButton" class="rounded-full text-accent text-12 xl:text-16 py-4 px-12 whitespace-nowrap md:px-16 lg:px-16 md:py-5 xl:py-5 xl:px-32 border-accent border border-1 hover:bg-accent hover:text-100 transition duration-300 ease-in">
+    COPY MY E-MAIL
+  </button>
+  <div class="h-[0.031rem] bg-accent w-full"></div>
+  </div>
+</section>
+
+
+
+<script>
+document.getElementById("copyButton").addEventListener("click", function() {
+  var email = "juszkowskikrzysztof@gmail.com";
+  
+  var emailElement = document.createElement("textarea");
+  emailElement.value = email;
+  document.body.appendChild(emailElement);
+  emailElement.select();
+  document.execCommand("copy");
+  document.body.removeChild(emailElement);
+  
+  // Dodaj kod obsługujący powiadomienie lub zmianę wyglądu przycisku po skopiowaniu
+  alert("Adres e-mail został skopiowany!");
+});
+</script>
+
+<!-- FOOTER -->
+<section class="flex flex-col mt-24 xl:mt-48 ">
+  <img class="" src="img/hugedeco.svg" alt="Product Design">
+  
+  <footer class="flex flex-col bg-100 sm:flex-row sm:justify-between border border-1 border-300 px-4  py-16 md:px-16 md:py-20 lg:px-24 xl:px-44 2xl:px-56">
+  
+    <nav class="flex flex-col justify-between gap-8 lg:gap-12 ">
+      <div class="flex justify-between">
+    
+      <div class="mr-24 lg:mr-48 w-12">
+      <img class="w-12" src="img/Logo.svg" alt="Krzysztof Juszkowski"/>
+    </div>
+    
+      <div class="flex flex-col items-end sm:items-start font-poppins text-16 text-800 font-medium gap-8 lg:gap-12"  id="navbar-links">
+      <a href="index.html" class="nav-link">HOME</a>
+       <a href="work.html" class="nav-link">WORK</a>         
+       <a href="about.html" class="nav-link">ABOUT</a>
+       <a href="contact.html" class="nav-link active">CONTACT</a>
+     </div>
+    </div>
+     <div class="flex justify-end" id="social-links">
+      <a href="https://www.behance.net/krzysiejuszkow" class="pr-8">
+        <img src="img/behance.svg" alt="Behance" />
+      </a>
+      <a href="https://www.linkedin.com/in/krzysztof-juszkowski-484767210/">
+        <img src="img/linkedin.svg" alt="Linkedin"/>
+      </a>
+      </div>
+  </nav>
+  
+  
+  <div class="flex flex-col sm:items-end space-y-4 mt-8 sm:mt-0 sm:w-7/12">
+    <h2 class="text-38 leading-snug sm:text-right">Lets elevate some experiences</h2>
+    <p class="font-poppins text-16 pb-2 sm:text-right">Feel free to contact me</p>
+    <button class="rounded-full text-accent border border-1 border-accent text-12 lg:text-12 py-4 w-full sm:w-32 md:my-2 xl:text-16 xl:py-5  hover:bg-accent hover:text-100 transition duration-300 ease-in">CONTACT</button>
+  </div>
+    
+  </footer>
+  </section>
+
+     </body>
+     </html>

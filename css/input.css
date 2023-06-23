@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+    @font-face {
+        font-family: 'nohemilight';
+        src: url('/public/fonts/nohemi-light-bf6438cc583f70b-webfont.woff2') format('woff2'),
+             url('/public/fonts/nohemi-light-bf6438cc583f70b-webfont.woff') format('woff');
+        font-weight: light;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'nohemiregular';
+        src: url('/public/fonts/nohemi-regular-bf6438cc58b98fc-webfont.woff2') format('woff2'),
+             url('/public/fonts/nohemi-regular-bf6438cc58b98fc-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    h1 {
+        font-family: 'nohemiregular';
+    }
+    
+    h2 {
+        font-family: 'nohemilight';
+    }
+    
+    .nav-link {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 2px;
+    }
+    
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: transparent;
+      transition: width 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+      background-color: #146cef;
+    }
+    
+    .nav-link.active::after {
+      width: 100%;
+      background-color: #146cef;
+    }
+
